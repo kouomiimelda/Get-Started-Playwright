@@ -1,0 +1,23 @@
+{
+  "name": "get-started-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kouomiimelda/Get-Started-Playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kouomiimelda/Get-Started-Playwright/issues"
+  },
+  "homepage": "https://github.com/kouomiimelda/Get-Started-Playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10"
+  }
+}
