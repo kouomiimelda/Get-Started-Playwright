@@ -24,23 +24,20 @@ Les tests couvrent principalement les fonctionnalités **d'inscription** et de *
 git clone https://github.com/ton-nom-utilisateur/nom-du-repo.git
 cd nom-du-repo
 npm install
-
+```
 ### 📥 Exécuter tous les tests
-
 ```bash
 npx playwright test
-
+```
 ### 📥Exécuter un test spécifique avec Cucumber
-
 ```bash
 npx cucumber-js tests/features/connexion.feature
-
+```
 ### 📥 Générer un rapport Allure
-
 ```bash
 npx allure generate reports/allure-results --clean -o reports/allure-report
 npx allure open reports/allure-report
-
+```
 
 ## ✅ Cas de Tests Couvert
 
