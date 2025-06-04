@@ -85,9 +85,4 @@ export class InscriptionThirdPage {
         await expect(this.validationText).toBeVisible();
     }
 
-
-
-
-
-
 }

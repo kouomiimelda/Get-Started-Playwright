@@ -51,7 +51,6 @@ export class Inscription{
     }
 
     async verifyPersonalInfoText(){
-
         // verifie la présence du texte informations personnelles dans l'entete
         const personalInfoTextElement = this.page.getByRole('heading', { name: 'Informations personnelles' });
         const isPersonalInfoTextVisible = await personalInfoTextElement.isVisible;
