@@ -1,6 +1,4 @@
 import { Locator, Page, expect } from "@playwright/test";
-import * as fs from "fs";
-
 export class InscriptionFirstPage{
     readonly page: Page;
     readonly getCountry: Locator;

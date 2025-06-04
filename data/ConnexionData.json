@@ -1,4 +1,12 @@
 {
-    "email" : "sadjojunior@gmail.com",
-    "password": "pass"
+    "student" :[
+
+        {"email" : "sadjojunior@gmail.com",
+         "password": "pass"
+        },
+
+        {"email" : "",
+         "password": ""
+        }  
+    ]
 }
