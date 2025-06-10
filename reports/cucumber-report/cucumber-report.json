@@ -1,0 +1,141 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "connexion-à-l'application;l'utilisateur-laisse-les-champs-vides",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "L'utilisateur laisse les champs vides",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14740600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "l'utilisateur accède à la page d'accueil de l'application",
+            "match": {
+              "location": "features\\step_definitions\\connexion.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11231187099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "il clique sur le bouton \"Connexion\"",
+            "match": {
+              "location": "features\\step_definitions\\connexion.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 410101500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "il est redirigé vers la page de connexion",
+            "match": {
+              "location": "features\\step_definitions\\connexion.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 933414999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "il laisse le champ \"email\" vide \"\"",
+            "match": {
+              "location": "features\\step_definitions\\connexion.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44308199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "il laisse le champ \"mot de passe\" vide \"\"",
+            "match": {
+              "location": "features\\step_definitions\\connexion.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38662700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "il voit le message d'erreur \"Email is required and must be valid.\"",
+            "match": {
+              "location": "features\\step_definitions\\connexion.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9047999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "il voit le message d'erreur \"Password is required.\"",
+            "match": {
+              "location": "features\\step_definitions\\connexion.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1938654800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "le bouton de connexion est désactivé",
+            "match": {
+              "location": "features\\step_definitions\\connexion.steps.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27401999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "connexion-à-l'application",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Connexion à l'application",
+    "tags": [],
+    "uri": "features\\connexion.feature"
+  }
+]

@@ -38,15 +38,15 @@ export class ConnexionPage {
 
   //Fonction pour verifier si le message d'avertissement de l'email est visible
   async verifyEmailWarningText() {
-    await expect(this.emailwarningText).toBeVisible();
+    return this.emailwarningText
   }
 //Fonction pour verifier si le message d'avertissement du mot de passe est visible
   async verifyPasswordWarningText() {
-    await expect(this.passwordwarningText).toBeVisible();
+    return this.passwordwarningText
   }
     //Click sur la page d'inscription
-  async connexion() {
-    await this.connexionButton.click();
+  async connexion(connexionButtonText: string) {
+    await this.page.getByRole('button', { name: connexionButtonText }).click();
   }
 
     async connexionButtonDisabled() {
