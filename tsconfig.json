@@ -1,0 +1,25 @@
+{ 
+    "compilerOptions": {
+    "lib": [
+        "ES2023",
+        "dom"
+      ],
+      "module": "commonjs",
+      "outDir": "./dist/",
+      "allowJs": true,
+      "checkJs": false,
+      "noEmit": true,
+      "moduleResolution": "node",
+      "target": "ES2023",
+      "strictNullChecks": false,
+      "strictBindCallApply": true,
+      "allowSyntheticDefaultImports": true,
+      "useUnknownInCatchVariables": false,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "removeComments": true,
+      "experimentalDecorators": true,
+    }, 
+    "include": [
+        "./**/*",
+            ], }

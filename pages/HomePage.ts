@@ -2,18 +2,20 @@ import { Locator, Page, expect } from "@playwright/test";
 
 export class HomePage {
   
-  private page: Page;
-  private welcomeText: Locator;
+  readonly page: Page;
+  readonly welcomeText: Locator;
+
  
   
   //Constructeur par defaut de la page
   constructor(page: Page) {
     this.page = page;
     this.welcomeText = page.getByRole('heading', { name: 'Bienvenue sur votre espace d\'' });
+
   }
-  //Fonction pour se navigation
+  //Fonction de navigation
   async navigate() {
-    await this.page.goto("http://test.icam-afrique.com");
+    await this.page.goto('http://test.icam-afrique.com');
   }
   //Verification de la page d'acceuil
   async verifyHomePage() {
@@ -31,8 +33,8 @@ export class HomePage {
   }
 
   //Click sur le bouton de connexion 
-  async login() {
-    await this.page.click("text=Connexion");
+  async login(loginButtonText: string) {
+    await this.page.getByRole('button', { name: loginButtonText }).click();
   }
 }
 
